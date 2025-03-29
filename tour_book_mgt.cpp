@@ -82,6 +82,7 @@ int main(){
         cout << "\nTour Booking & Travel Package Management\n";
         cout << "1. Book Tour\n";
         cout << "2. Cancel Booking\n";
+        cout << "3. Display Bookings\n";
         cout << "20. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
@@ -103,6 +104,10 @@ int main(){
                 cout << "Enter Booking ID to cancel: ";
                 cin >> bookingId;
                 bookings.cancelBooking(bookingId);
+                break;
+            }
+            case 3: {
+                bookings.displayBookings();
                 break;
             }
             default: {
